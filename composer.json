@@ -1,0 +1,20 @@
+{
+    "name": "chrisdfr/configjson",
+    "description": "Librairie de configuration d'une application php à partir d'un fichier JSON",
+    "type": "library",
+    "keywords": ["json", "config", "configuration", "php"],
+    "license": "LGPL-2.1-or-later",
+    "autoload": {
+        "psr-4": {
+            "ChrisDfr\\Configjson\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christophe Dufour",
+            "email": "chrisdfr@proximus.be"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
