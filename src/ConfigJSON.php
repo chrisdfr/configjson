@@ -22,6 +22,8 @@ class ConfigJSON
     public private(set) static array $setting = [];
 
     /**
+     * Lit un fichier JSON et initialise le tableau des paramètres
+     * 
      * @param string $filename
      * Le chemin vers le fichier json à lire
      * @throws InvalidJsonException
