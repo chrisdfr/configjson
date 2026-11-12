@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 use ChrisDfr\ConfigJSON\ConfigJSON as Cfg;
 
-require "./vendor/autoload.php";
+require "../vendor/autoload.php";
 
 try {
-    Cfg::load("./config/conf.json");
+    Cfg::load("../config/conf.json");
 }
 catch(Exception $e) {
     echo $e->getMessage();
