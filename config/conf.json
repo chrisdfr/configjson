@@ -1,0 +1,9 @@
+{
+    "user": "jules",
+    "pass": "password",
+    "infos": {
+        "firstname": "Jules",
+        "name": "Verne",
+        "sex": "M"
+    }
+}
