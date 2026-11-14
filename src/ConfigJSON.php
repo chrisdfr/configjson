@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace ChrisDfr\ConfigJSON;
 
+use ChrisDfr\ConfigJSON\Exception\InvalidePathException;
 use ChrisDfr\ConfigJSON\Exception\InvalidJsonException;
 use SplFileObject;
 
@@ -31,8 +32,12 @@ class ConfigJSON
      * @return void
      * Ne retourne aucune valeur
      */
-    public static function load(string $filename): void // ConfigJSON
+    public static function load(string $filename): void
     {
+        if(!is_readable($filename)) {
+            throw new InvalidePathException("Aucun fichier ou répertoire de ce nom: $filename");
+        }
+
         $file = new SplFileObject($filename);
         $content = $file->fread($file->getSize());
         
